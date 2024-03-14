@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(./imagens/fundo.svg);
+    background-size: cover;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+  }
+  
+  .left-login {
+   background-color: #f3f5f300;
+    width: 63vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-login > h1 {
+    color: #77ffc0;
+    font-size: 2.5vw;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(2, 226, 226, 0.938);
+    background-color: rgba(64, 73, 71, 0.733);
+    opacity: 2.0; 
+     
+}
+
+.login-box h1 {
+    color: #13af80;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-login {
+    
+    width: 93%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #73bebef6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #13af80;
+}
+
+@media only screen and (max-width: 950px) {
+    .left-login > h1 {
+      font-size: 2.5vw; 
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .left-login {
+      display: none; 
+    }
+  
+    .container {
+      width: 90%; 
+      margin: 0 auto; 
+    }
+  
+    .login-box {
+      width: 80%; 
+    }
+  }
